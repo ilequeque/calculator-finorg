@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from .rates_store import set_rate
 
 def parse_nbkr():
-    url = "http://www.nationalbank.kz/rss/rates_all.xml"
+    url = "https://www.nationalbank.kz/rss/rates_all.xml"
     resp = requests.get(url, timeout=10)
     tree = ET.fromstring(resp.content)
 
